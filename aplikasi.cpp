@@ -1,3 +1,5 @@
+/**Javiar Fasyah [1301164477]**/
+
 #include "parent.h"
 #include "child.h"
 #include "relasi.h"
