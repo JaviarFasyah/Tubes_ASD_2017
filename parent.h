@@ -1,3 +1,5 @@
+/**Javiar Fasyah [1301164477]**/
+
 #ifndef PARENT_H_INCLUDED
 #define PARENT_H_INCLUDED
 #include<iostream>
