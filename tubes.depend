@@ -44,3 +44,35 @@
 	"relasi.h"
 	<windows.h>
 
+1490681131 source:e:\gh\tubes_asd_2017\aplikasi.cpp
+	"parent.h"
+	"child.h"
+	"relasi.h"
+	<windows.h>
+	<conio.h>
+
+1490681131 e:\gh\tubes_asd_2017\parent.h
+	<iostream>
+
+1490683354 e:\gh\tubes_asd_2017\child.h
+	<iostream>
+	"parent.h"
+
+1490681131 e:\gh\tubes_asd_2017\relasi.h
+	<iostream>
+	"parent.h"
+	"child.h"
+	"relasi.h"
+
+1490681131 source:e:\gh\tubes_asd_2017\main.cpp
+	<iostream>
+	"parent.h"
+	"child.h"
+	"relasi.h"
+
+1490681131 source:e:\gh\tubes_asd_2017\parent.cpp
+	"parent.h"
+
+1490681131 source:e:\gh\tubes_asd_2017\relasi.cpp
+	"relasi.h"
+
