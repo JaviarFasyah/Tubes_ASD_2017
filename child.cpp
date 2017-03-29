@@ -1,5 +1,3 @@
-/**REYNALDISYAPUTRA_1301164141**/
-
 #include "child.h"
 
 void createlist(list_f &l){ /**REYNALDISYAPUTRA_1301164141**/

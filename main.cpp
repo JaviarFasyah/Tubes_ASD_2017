@@ -1,5 +1,3 @@
-/**REYNALDISYAPUTRA_1301164141**/
-
 #include <iostream>
 #include "parent.h"
 #include "child.h"

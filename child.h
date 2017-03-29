@@ -1,5 +1,3 @@
-/**REYNALDISYAPUTRA_1301164141**/
-
 #ifndef CHILD_H_INCLUDED
 #define CHILD_H_INCLUDED
 #include<iostream>

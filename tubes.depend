@@ -51,10 +51,10 @@
 	<windows.h>
 	<conio.h>
 
-1490681131 e:\gh\tubes_asd_2017\parent.h
+1490683641 e:\gh\tubes_asd_2017\parent.h
 	<iostream>
 
-1490683354 e:\gh\tubes_asd_2017\child.h
+1490790806 e:\gh\tubes_asd_2017\child.h
 	<iostream>
 	"parent.h"
 
