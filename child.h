@@ -1,5 +1,3 @@
-/**REYNALDISYAPUTRA_1301164141**/
-
 #ifndef CHILD_H_INCLUDED
 #define CHILD_H_INCLUDED
 #include<iostream>
@@ -10,19 +8,19 @@
 
 using namespace std;
 
-struct infotype_f{
+struct infotype_f{ /**REYNALDISYAPUTRA_1301164141**/
     string id, nama, rilis, genre, about;
     int rating;
 };
 
 typedef struct elmlist_f *address_f;
 
-struct elmlist_f{
+struct elmlist_f{ /**REYNALDISYAPUTRA_1301164141**/
     infotype_f info;
     address_f next, prev;
 };
 
-struct list_f{
+struct list_f{ /**REYNALDISYAPUTRA_1301164141**/
     address_f first, last;
 };
 
