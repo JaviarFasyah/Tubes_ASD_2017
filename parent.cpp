@@ -1,23 +1,21 @@
-/**Javiar Fasyah [1301164477]**/
-
 #include "parent.h"
 
-void createlist(list_a &l){
+void createlist(list_a &l){ /**Javiar Fasyah [1301164477]**/
     first(l) = NULL;
 }
 
-address_a alokasi(infotype_a x){
+address_a alokasi(infotype_a x){ /**Javiar Fasyah [1301164477]**/
     address_a p = new elmlist_a;
     info(p) = x;
     next(p) = NULL;
     return p;
 }
 
-void dealokasi(address_a &p){
+void dealokasi(address_a &p){ /**Javiar Fasyah [1301164477]**/
     delete p;
 }
 
-void insertfirst(list_a &l, address_a p){
+void insertfirst(list_a &l, address_a p){ /**Javiar Fasyah [1301164477]**/
     if(first(l) != NULL){
         next(p) = first(l);
         first(l) = p;
@@ -27,7 +25,7 @@ void insertfirst(list_a &l, address_a p){
     }
 }
 
-void insertlast(list_a &l, address_a p){
+void insertlast(list_a &l, address_a p){ /**Javiar Fasyah [1301164477]**/
     address_a q;
     if(first(l) != NULL){
         q = first(l);
@@ -41,7 +39,7 @@ void insertlast(list_a &l, address_a p){
     }
 }
 
-void deletefirst(list_a &l, address_a &p){
+void deletefirst(list_a &l, address_a &p){ /**Javiar Fasyah [1301164477]**/
     if(first(l) != NULL){
         if(next(first(l)) != NULL){
         p = first(l);
@@ -57,7 +55,7 @@ void deletefirst(list_a &l, address_a &p){
     }
 }
 
-void deletelast(list_a &l, address_a &p){
+void deletelast(list_a &l, address_a &p){ /**Javiar Fasyah [1301164477]**/
     address_a q;
     if(first(l) != NULL){
         if(next(first(l)) != NULL){
@@ -75,7 +73,7 @@ void deletelast(list_a &l, address_a &p){
     }
 }
 
-address_a findelm(list_a l, infotype_a x){
+address_a findelm(list_a l, infotype_a x){ /**Javiar Fasyah [1301164477]**/
     address_a q;
     q = first(l);
     while(q != NULL && info(q).id != x.id){
@@ -84,7 +82,7 @@ address_a findelm(list_a l, infotype_a x){
     return q;
 }
 
-void insertafter(list_a &l, address_a q, address_a p){
+void insertafter(list_a &l, address_a q, address_a p){ /**Javiar Fasyah [1301164477]**/
     if(first(l) != NULL){
         next(p) = next(q);
         next(q) = p;
@@ -94,7 +92,7 @@ void insertafter(list_a &l, address_a q, address_a p){
     }
 }
 
-void deleteafter(list_a &l, address_a q, address_a &p){
+void deleteafter(list_a &l, address_a q, address_a &p){ /**Javiar Fasyah [1301164477]**/
     if(first(l) != NULL){
         if(next(first(l)) != NULL){
             p = next(q);
@@ -108,7 +106,7 @@ void deleteafter(list_a &l, address_a q, address_a &p){
     }
 }
 
-void printinfo(list_a l){
+void printinfo(list_a l){ /**Javiar Fasyah [1301164477]**/
     address_a q;
     if(first(l) != NULL){
         q = first(l);

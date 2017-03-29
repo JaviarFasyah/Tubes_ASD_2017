@@ -1,5 +1,3 @@
-/**Javiar Fasyah [1301164477]**/
-
 #ifndef RELASI_H_INCLUDED
 #define RELASI_H_INCLUDED
 

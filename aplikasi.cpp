@@ -1,12 +1,10 @@
-/**Javiar Fasyah [1301164477]**/
-
 #include "parent.h"
 #include "child.h"
 #include "relasi.h"
 #include <windows.h>
 #include <conio.h>
 
-void addactor(list_a &A){
+void addactor(list_a &A){ /**Javiar Fasyah [1301164477]**/
     infotype_a x;
     address_a p, q;
     cout<<endl;
@@ -54,7 +52,7 @@ void addactor(list_a &A){
     system("cls");
 }
 
-void addmovie(list_f &F){
+void addmovie(list_f &F){ /**Javiar Fasyah [1301164477]**/
     infotype_f x;
     address_f p, q;
     cout<<endl;
@@ -102,7 +100,7 @@ void addmovie(list_f &F){
     system("cls");
 }
 
-void addcast(list_r &R, list_a A, list_f F){
+void addcast(list_r &R, list_a A, list_f F){ /**Javiar Fasyah [1301164477]**/
     infotype_a x;
     infotype_f y;
     address_a p;
@@ -138,7 +136,7 @@ void addcast(list_r &R, list_a A, list_f F){
     system("cls");
 }
 
-void viewallactor(list_a A){
+void viewallactor(list_a A){ /**Javiar Fasyah [1301164477]**/
     cout<<endl;
     cout<<"               View All Actors"<<endl;
     cout<<endl;
@@ -155,7 +153,7 @@ void viewallactor(list_a A){
     system("cls");
 }
 
-void viewallmovie(list_f F){
+void viewallmovie(list_f F){ /**Javiar Fasyah [1301164477]**/
     cout<<endl;
     cout<<"               View All Movies"<<endl;
     cout<<endl;
@@ -172,7 +170,7 @@ void viewallmovie(list_f F){
     system("cls");
 }
 
-void viewallcast(list_r R){
+void viewallcast(list_r R){ /**Javiar Fasyah [1301164477]**/
     cout<<endl;
     cout<<"               View All Casts"<<endl;
     cout<<endl;
@@ -189,7 +187,7 @@ void viewallcast(list_r R){
     system("cls");
 }
 
-void searchactor(list_a A){
+void searchactor(list_a A){ /**Javiar Fasyah [1301164477]**/
     infotype_a x;
     address_a p;
     cout<<endl;
@@ -216,7 +214,7 @@ void searchactor(list_a A){
     system("cls");
 }
 
-void searchmovie(list_f F){
+void searchmovie(list_f F){ /**Javiar Fasyah [1301164477]**/
     infotype_f y;
     address_f q;
     cout<<endl;
@@ -243,7 +241,7 @@ void searchmovie(list_f F){
     system("cls");
 }
 
-void searchcast(list_r R, list_a A, list_f F){
+void searchcast(list_r R, list_a A, list_f F){ /**Javiar Fasyah [1301164477]**/
     infotype_a x;
     infotype_f y;
     address_a p;
@@ -279,7 +277,7 @@ void searchcast(list_r R, list_a A, list_f F){
     system("cls");
 }
 
-void deletecast(list_r &R, list_a A, list_f F){
+void deletecast(list_r &R, list_a A, list_f F){ /**Javiar Fasyah [1301164477]**/
     infotype_a x;
     infotype_f y;
     address_a p;
@@ -321,7 +319,7 @@ void deletecast(list_r &R, list_a A, list_f F){
     system("cls");
 }
 
-void deleteactor(list_a &A, list_r &R){
+void deleteactor(list_a &A, list_r &R){ /**Javiar Fasyah [1301164477]**/
     infotype_a x;
     address_a p, p1, p2, pd;
     address_r r, r1, r2, rd;
@@ -380,7 +378,7 @@ void deleteactor(list_a &A, list_r &R){
     system("cls");
 }
 
-void deletemovie(list_f &F, list_r &R){
+void deletemovie(list_f &F, list_r &R){ /**Javiar Fasyah [1301164477]**/
     infotype_f y;
     address_f q, q1, q2, qd;
     address_r r, r1, r2, rd;
@@ -439,12 +437,12 @@ void deletemovie(list_f &F, list_r &R){
     system("cls");
 }
 
-void exit(){
+void exit(){ /**Javiar Fasyah [1301164477]**/
     cout<<endl;
     cout<<"               Thank You Mate! :D"<<endl;
 }
 
-void enter(){
+void enter(){ /**Javiar Fasyah [1301164477]**/
     cout<<endl;
     cout<<"               Welcome Mate! :D"<<endl;
     Sleep(2000);

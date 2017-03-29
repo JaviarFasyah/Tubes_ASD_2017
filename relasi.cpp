@@ -1,12 +1,10 @@
-/**Javiar Fasyah [1301164477]**/
-
 #include "relasi.h"
 
-void createlist(list_r &l){
+void createlist(list_r &l){ /**Javiar Fasyah [1301164477]**/
     first(l) = NULL;
 }
 
-address_r alokasi(address_a a, address_f f){
+address_r alokasi(address_a a, address_f f){ /**Javiar Fasyah [1301164477]**/
     address_r p = new elmlist_r;
     aktor(p) = a;
     film(p) = f;
@@ -14,11 +12,11 @@ address_r alokasi(address_a a, address_f f){
     return p;
 }
 
-void dealokasi(address_r &p){
+void dealokasi(address_r &p){ /**Javiar Fasyah [1301164477]**/
     delete p;
 }
 
-void insertfirst(list_r &l, address_r p){
+void insertfirst(list_r &l, address_r p){ /**Javiar Fasyah [1301164477]**/
     if(first(l) != NULL){
         next(p) = first(l);
         first(l) = p;
@@ -28,7 +26,7 @@ void insertfirst(list_r &l, address_r p){
     }
 }
 
-void insertlast(list_r &l, address_r p){
+void insertlast(list_r &l, address_r p){ /**Javiar Fasyah [1301164477]**/
     address_r q;
     if(first(l) != NULL){
         q = first(l);
@@ -42,7 +40,7 @@ void insertlast(list_r &l, address_r p){
     }
 }
 
-void deletefirst(list_r &l, address_r &p){
+void deletefirst(list_r &l, address_r &p){ /**Javiar Fasyah [1301164477]**/
     if(first(l) != NULL){
         if(next(first(l)) != NULL){
         p = first(l);
@@ -58,7 +56,7 @@ void deletefirst(list_r &l, address_r &p){
     }
 }
 
-void deletelast(list_r &l, address_r &p){
+void deletelast(list_r &l, address_r &p){ /**Javiar Fasyah [1301164477]**/
     address_r q;
     if(first(l) != NULL){
         if(next(first(l)) != NULL){
@@ -76,7 +74,7 @@ void deletelast(list_r &l, address_r &p){
     }
 }
 
-address_r findelm(list_r l, address_a a, address_f f){
+address_r findelm(list_r l, address_a a, address_f f){ /**Javiar Fasyah [1301164477]**/
     address_r q;
     q = first(l);
     while(q != NULL && aktor(q) != a || film(q) != f){
@@ -85,7 +83,7 @@ address_r findelm(list_r l, address_a a, address_f f){
     return q;
 }
 
-void insertafter(list_r &l, address_r q, address_r p){
+void insertafter(list_r &l, address_r q, address_r p){ /**Javiar Fasyah [1301164477]**/
     if(first(l) != NULL){
         next(p) = next(q);
         next(q) = p;
@@ -95,7 +93,7 @@ void insertafter(list_r &l, address_r q, address_r p){
     }
 }
 
-void deleteafter(list_r &l, address_r q, address_r &p){
+void deleteafter(list_r &l, address_r q, address_r &p){ /**Javiar Fasyah [1301164477]**/
     if(first(l) != NULL){
         if(next(first(l)) != NULL){
             p = next(q);
@@ -109,7 +107,7 @@ void deleteafter(list_r &l, address_r q, address_r &p){
     }
 }
 
-void printinfo(list_r l){
+void printinfo(list_r l){ /**Javiar Fasyah [1301164477]**/
     address_r q;
     if(first(l) != NULL){
         q = first(l);
