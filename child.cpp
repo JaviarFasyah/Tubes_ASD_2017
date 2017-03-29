@@ -1,13 +1,11 @@
-/**REYNALDISYAPUTRA_1301164141**/
-
 #include "child.h"
 
-void createlist(list_f &l){
+void createlist(list_f &l){ /**REYNALDISYAPUTRA_1301164141**/
     first(l) = NULL;
     last(l) = NULL;
 }
 
-address_f alokasi(infotype_f x){
+address_f alokasi(infotype_f x){ /**REYNALDISYAPUTRA_1301164141**/
     address_f p = new elmlist_f;
     info(p) = x;
     next(p) = NULL;
@@ -15,11 +13,11 @@ address_f alokasi(infotype_f x){
     return p;
 }
 
-void dealokasi(address_f &p){
+void dealokasi(address_f &p){ /**REYNALDISYAPUTRA_1301164141**/
     delete p;
 }
 
-address_f findelm(list_f l, infotype_f x){
+address_f findelm(list_f l, infotype_f x){ /**REYNALDISYAPUTRA_1301164141**/
     address_f q = first(l);
     while(q != NULL && info(q).id != x.id){
         q = next(q);
@@ -27,7 +25,7 @@ address_f findelm(list_f l, infotype_f x){
     return q;
 }
 
-void insertfirst(list_f &l, address_f p){
+void insertfirst(list_f &l, address_f p){ /**REYNALDISYAPUTRA_1301164141**/
     if(first(l) != NULL){
         next(p) = first(l);
         prev(first(l)) = p;
@@ -39,7 +37,7 @@ void insertfirst(list_f &l, address_f p){
     }
 }
 
-void insertlast(list_f &l, address_f p){
+void insertlast(list_f &l, address_f p){ /**REYNALDISYAPUTRA_1301164141**/
     if(first(l) != NULL){
         prev(p) = last(l);
         next(last(l)) = p;
@@ -50,7 +48,7 @@ void insertlast(list_f &l, address_f p){
     }
 }
 
-void insertafter(list_f &l, address_f q, address_f p){
+void insertafter(list_f &l, address_f q, address_f p){ /**REYNALDISYAPUTRA_1301164141**/
     if(q != NULL){
         if(next(q) != NULL){
             next(p) = next(q);
@@ -64,7 +62,7 @@ void insertafter(list_f &l, address_f q, address_f p){
     }
 }
 
-void deletefirst(list_f &l, address_f &p){
+void deletefirst(list_f &l, address_f &p){ /**REYNALDISYAPUTRA_1301164141**/
     if(first(l) != NULL){
         if(next(first(l)) != NULL){
             p = first(l);
@@ -80,7 +78,7 @@ void deletefirst(list_f &l, address_f &p){
     }
 }
 
-void deletelast(list_f &l, address_f &p){
+void deletelast(list_f &l, address_f &p){ /**REYNALDISYAPUTRA_1301164141**/
     if(first(l) != NULL){
         if(next(first(l)) != NULL){
             p = last(l);
@@ -94,7 +92,7 @@ void deletelast(list_f &l, address_f &p){
     }
 }
 
-void deleteafter(list_f &l, address_f q, address_f &p){
+void deleteafter(list_f &l, address_f q, address_f &p){ /**REYNALDISYAPUTRA_1301164141**/
     if(first(l) != NULL){
         if(q != NULL && q != last(l)){
             if(next(q) != last(l)){
@@ -111,7 +109,7 @@ void deleteafter(list_f &l, address_f q, address_f &p){
     }
 }
 
-void printinfo(list_f l){
+void printinfo(list_f l){ /**REYNALDISYAPUTRA_1301164141**/
     address_f q = first(l);
     if(first(l) != NULL){
         while(q != NULL){
